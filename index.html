@@ -1,11 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Influencer Gear</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body class="text-[#3A3A3A]">
+    <header>
+      <nav id="navbar" class="pt-[87px] pb-12">
+        <div
+          class="nav_container flex max-w-[1200px] mx-auto my-0 justify-between align-middle"
+        >
+          <div class="nav_title">
+            <h1 class="poppins-bold text-2xl">Influencer products</h1>
+          </div>
+
+          <div class="nav_tags">
+            <ul
+              class="flex justify-between gap-8 align-middle poppins-semibold text-lg"
+            >
+              <li class="tag"><a href="">Home</a></li>
+              <li class="tag"><a href="">Products</a></li>
+              <li class="tag"><a href="">Sign Up</a></li>
+              <li class="tag"><a href="">Log In</a></li>
+              <li class="tag">
+                <span class="material-symbols-outlined">search</span>
+              </li>
+              <li class="tag">
+                <span class="material-symbols-outlined">shopping_cart</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <section id="banner" class="mb-16">
+        <div class="banner_container flex gap-32 max-w-[1200px] mx-auto my-0">
+
+          <div class="banner_info py-16 max-w-[582px]">
+            <h1 class="poppins-bold text-6xl leading-17.5 mb-4">Start your Journey as Influencer</h1>
+            <p class="poppins-semibold text-base mb-4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem
+              vestibulum sed scelerisque eros. Lectus faucibus.
+            </p>
+            <button class="flex justify-center align-middle gap-2 poppins-bold text-base px-6 py-3 bg-[#E02C6D] text-[#FFFFFF] rounded-[41px]">
+              <p>Preebook now</p>
+              <span class="material-symbols-outlined"> arrow_forward </span>
+            </button>
+          </div>
+
+          <div class="banner_image relative">
+            <img class="w-full" src="./images/Circle design.svg" alt="">
+            <img class="absolute bottom-8 w-full" src="./images/main-camera.png" alt="">
+          </div>
+        </div>
+      </section>
+
+      <section id="logos" class="mb-24">
+        <div class="h-px w-full bg-gradient-to-r from-transparent via-[#bfbebe] to-transparent"></div>
+
+        <div class="logos_container max-w-[1110px] mx-auto my-0
+        flex justify-center align-middle gap-14 px-14 py-9">
+          <img src="./logos/Alibaba.svg" alt="" class="logo">
+          <img src="./logos/Amazon.svg" alt="" class="logo">
+          <img src="./logos/Daraz.pk Logo.svg" alt="" class="logo">
+          <img src="./logos/Ebay.svg" alt="" class="logo">
+          <img src="./logos/Rakuten.svg" alt="" class="logo">
+          <img src="./logos/Target.svg" alt="" class="logo">
+          <img src="./logos/Walmart.svg" alt="" class="logo">
+        </div>
+
+        <div class="h-px w-full bg-gradient-to-r from-transparent via-[#bfbebe] to-transparent"></div>
+      </section>
+    </header>
+
+    <main>
+      <section id="products">
+        <div class="products_header"><h1>Popular Collection</h1></div>
+        <div class="products_card_container"></div>
+        <div class="products_footer">
+          <p>See More</p>
+          <span class="material-symbols-outlined">
+arrow_forward
+</span>
+        </div>
+      </section>
+    </main>
+
+    <footer></footer>
+  </body>
 </html>
